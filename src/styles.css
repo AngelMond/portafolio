@@ -1,0 +1,468 @@
+:root {
+  --body-background: #F2F1F2;
+  --background-nav-link-1: #1895DE;
+  --background-nav-link-2: #2A95F5;
+  --background-nav-link-3: #2075DB;
+  --background-nav-link-4: #214FDB;
+  --font-color-hover-links: #002D44;
+  --background-sections: #FFFDFF;
+  --sections-border-blue: #3FA4E1;
+  --sections-border-grayLight: #D2D1D2;
+  --project-description-background: #002D44;
+  --h3-section-headings: #003F64;
+}
+
+#root{
+  min-height: 100vh !important;
+}
+
+body {
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+  /*FONTS*/
+  font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: antialiased;
+}
+
+.ff{
+  font-family: Arial, Helvetica, sans-serif !important;
+}
+
+
+#root {
+  background-color: var(--body-background);
+}
+
+.section-headings {
+  color: var(--h3-section-headings);
+}
+
+
+/* Font sizes */
+
+.fs-10{
+  font-size: 10px !important;
+}
+.fs-11{
+  font-size: 11px !important;
+}
+.fs-12{
+  font-size: 12px !important;
+}
+.fs-14{
+  font-size: 14px !important;
+}
+.fs-15{
+  font-size: 15px !important;
+}
+.fs-16{
+  font-size: 16px !important;
+}
+.fs-18{
+  font-size: 18px !important;
+}
+.fs-20{
+  font-size: 20px !important;
+}
+/*Header Styles*/
+#header {
+  overflow: hidden;
+  background: #202d35;
+}
+
+.heading-h1 {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+.heading-h1:hover {
+  color: white;
+}
+
+nav {
+  min-height: 100px;
+  overflow: hidden;
+}
+
+
+.dynamic-logo {
+  color: #fff;
+}
+
+.dynamic-list-container {
+  overflow: hidden;
+}
+
+.slide-text ul {
+  margin: 0px !important;
+  padding: 0px !important;
+  width: 180px;
+  height: 70px;
+  list-style: none;
+  /* position: relative; */
+  animation: slide 15s infinite;
+}
+
+.slide-text li {
+  text-align: center;
+  height: 70px;
+  line-height: 70px;
+  font-size: 22px;
+}
+
+/*Animation for dynamic logo text*/
+@keyframes slide {
+
+  0%,
+  14.28% {
+    transform: translateY(0%);
+  }
+
+  14.28%,
+  28.56% {
+    transform: translateY(-100%);
+  }
+
+  28.56%,
+  42.84% {
+    transform: translateY(-200%);
+  }
+
+  42.84%,
+  57.12% {
+    transform: translateY(-300%);
+  }
+
+  57.12%,
+  71.4% {
+    transform: translateY(-400%);
+  }
+
+  71.4%,
+  85.68% {
+    transform: translateY(-500%);
+  }
+
+  85.68%,
+  100% {
+    transform: translateY(-600%);
+  }
+
+  100% {
+    transform: translateY(-700%);
+  }
+}
+
+
+.navLinks {
+  text-decoration: none;
+}
+
+/*Background navlinks*/
+.bgLink-1 {
+  background-color: var(--background-nav-link-1);
+}
+
+.bgLink-2 {
+  background-color: var(--background-nav-link-2);
+}
+
+.bgLink-3 {
+  background-color: var(--background-nav-link-3);
+}
+
+.bgLink-4 {
+  background-color: var(--background-nav-link-4);
+}
+
+/*Hover navbar links*/
+
+.bgLink-1:hover span,
+.bgLink-1:hover .icon {
+  color: var(--font-color-hover-links);
+}
+
+.bgLink-2:hover span,
+.bgLink-2:hover .icon {
+  color: var(--font-color-hover-links);
+}
+
+.bgLink-3:hover span,
+.bgLink-3:hover .icon {
+  color: var(--font-color-hover-links);
+}
+
+.bgLink-4:hover span,
+.bgLink-4:hover .icon {
+  color: var(--font-color-hover-links);
+}
+
+
+.section-border {
+  border-top: 3px solid var(--sections-border-blue);
+  background-color: var(--background-sections);
+  border-bottom: 1px solid var(--sections-border-grayLight);
+}
+
+/*Styles for home section*/
+.homePage {
+  margin-bottom: 270px;
+  height: 400px;
+}
+
+/*Styles for footer*/
+.social-media {
+  border-top: 1px solid var(--sections-border-grayLight);
+}
+
+.footerIcons {
+  color: black;
+  padding: 10px;
+}
+
+.footerIcons:hover {
+  color: var(--background-nav-link-1);
+  cursor: pointer;
+}
+
+.footer-link {
+  margin: 0px !important;
+}
+
+.footer-link-Angel {
+  text-decoration: none;
+  color: var(--background-nav-link-1);
+}
+
+.footer-link-Angel:hover {
+  cursor: pointer;
+}
+
+/*Styles for projects description*/
+.projectDescription {
+  display: none;
+  overflow: hidden;
+  width: 300px;
+  height: 220px;
+  opacity: .8;
+  position: absolute;
+  background-color: var(--project-description-background);
+  padding: 20px 5px;
+}
+
+.project-title {
+  color: white;
+  font-weight: bold;
+}
+
+.description {
+  color: white;
+}
+
+.project-technologies {
+  color: white;
+}
+
+.project-links:hover {
+  box-shadow: 0px 0px 1px 1px rgb(143, 151, 155);
+  background-color: #2d74a3 !important;
+  color: white !important;
+  transition: 350ms;
+}
+
+.projectImage {
+  width: 300px;
+  height: 220px;
+}
+
+/*Show project description when hover*/
+.image-container:hover .projectDescription {
+  display: block;
+  cursor: pointer;
+}
+
+/*Animations for project description*/
+.image-container:hover .project-title,
+.image-container:hover .description {
+  animation: showTitle 300ms linear;
+  animation: showDescription 450ms linear;
+}
+
+.image-container:hover .project-technologies {
+  animation: showTechnologies 400ms linear;
+}
+
+/*Animation title description*/
+@keyframes showTitle {
+  from {
+    transform: translateY(-200%);
+  }
+
+  to {
+    transform: translateY(0%);
+  }
+}
+
+/*Animation project description*/
+@keyframes showDescription {
+  from {
+    transform: translateY(-300%);
+    color: black;
+  }
+
+  to {
+    transform: translateY(0%);
+    color: white;
+  }
+}
+
+/*Animation technologies description*/
+@keyframes showTechnologies {
+  from {
+    transform: translateX(-300%);
+  }
+
+  to {
+    transform: translateX(0%);
+  }
+}
+
+
+/*Contact Styles*/
+
+
+.contact-section {
+  margin-bottom: 270px;
+}
+
+.textarea-contact {
+  min-height: 150px !important;
+  max-height: 250px;
+}
+
+.sendButton {
+  background-color: #3EA4E4;
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding: 7px 30px;
+  cursor: pointer;
+  color: #fff;
+  width: auto;
+  text-decoration: none;
+}
+
+.sendButton:hover {
+  background-color: #1BA0EF;
+  color: white;
+}
+
+/*Display the message when send the contact form in Contact.js component*/
+#messageSended {
+  display: none;
+}
+
+#errorSendForm {
+  display: none;
+}
+
+/*Resume styles for download resume*/
+.resumeImage:hover~#titleResume {
+  color: red !important;
+}
+
+.aboutMeImages {
+  width: 80px !important;
+  height: 80px !important;
+}
+
+
+@media (max-width: 767px) {
+  .aboutMeImages {
+    width: 60px !important;
+    height: 60px !important;
+  }
+}
+
+@media (max-width: 650px) {
+  .aboutMeImages {
+    width: 30px !important;
+    height: 30px !important;
+  }
+}
+
+@media (max-width: 550px) {
+  .aboutMeImages {
+    width: 20px !important;
+    height: 20px !important;
+  }
+}
+
+.resumeImages {
+  width: 60px !important;
+  height: 67px !important;
+}
+
+.height-240{
+  height: 240px !important;
+}
+
+
+/*Styles page-not-found*/
+.page-not-found {
+  min-height: 600px;
+}
+
+.fs-skills{
+  font-size: 16px !important;
+}
+
+.fs-responsive{
+  font-size: 18px !important;
+}
+
+/*Media query to center text in AboutMe section in mobile devices*/
+@media screen and (max-width:575px) {
+  .paragraph {
+    text-align: start;
+  }
+  .fs-responsive{
+    font-size: 15px !important;
+  }
+
+  .fs-skills{
+    font-size: 15px !important;
+  }
+}
+
+/*Media queries to change font-size in navbar*/
+@media screen and (max-width:474px) {
+  .navLinks {
+    font-size: 13px !important;
+  }
+
+  .fs-responsive{
+    font-size: 13px !important;
+  }
+
+  .fs-skills{
+    font-size: 13px !important;
+  }
+}
+
+@media screen and (max-width:421px) {
+  .navLinks {
+    font-size: 12px !important;
+  }
+  
+  .fs-responsive{
+    font-size: 12px !important;
+  }
+
+  .fs-skills{
+    font-size: 12px !important;
+  }
+}
