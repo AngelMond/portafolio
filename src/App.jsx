@@ -8,7 +8,6 @@ import { BrowserRouter as Router } from "react-router-dom";
 export const App = () => {
   return (
     <Router>
-
       <div className="App">
         <Header />
         <main className='container'>
