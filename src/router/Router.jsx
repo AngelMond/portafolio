@@ -9,6 +9,7 @@ export const RouterComponent = () => {
             <Route path='/' element={<HomePage />} />
             <Route path='/about' element={<AboutMe />} />
             <Route path='/portfolio' element={<Portfolio />} />
+            {/* <Route path='/portfolio1' element={<Portfolio />} /> */}
             <Route path='/contact' element={<Contact />} />
             <Route path='/resume' element={<Resume />} />
             <Route path='*' element={
