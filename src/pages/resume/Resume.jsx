@@ -34,8 +34,8 @@ import googleEngineer from '../../images/tech-images/devops/cloudEngineer.png';
 import pdfImage from '../../images/icons/pdf-icon.webp'
 
 
-import resume from './resume.pdf'
-import resumeSpanish from './resumeSpanish.pdf'
+import resume from '../../assets/resume.pdf'
+import resumeSpanish from '../../assets/resumeSpanish.pdf'
 
 export const Resume = () => {
     return (
@@ -72,10 +72,9 @@ export const Resume = () => {
                             <img src={googleEngineer} alt="Google Associate Cloud Engineer" title="Click to view credentials as Associate Cloud Engineer" className="resumeImages" />
                         </a>
                         <img src={linux} alt="Image Linux" title="Linux" width={60} height={60} />
+                        <img src={nginx} alt="Image Nginx" title="Nginx" width={60} height={60} />
                         <img src={git} alt=" Image Git" title="Git" />
                         <img src={github} alt="Image Github" title="Github" />
-                        <img src={heroku} alt="Image Heroku" title="Heroku" />
-                        <img src={nginx} alt="Image Nginx" title="Nginx" width={60} height={60} />
                         {/* <img src={vscode} alt="VSCode" title="VSCode" /> */}
                     </div>
                 </div>
