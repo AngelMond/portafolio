@@ -1,6 +1,6 @@
 import React from "react";
 import { Images } from './Images'
-import resume from '../../assets/resume.pdf'
+import resume from '../../assets/AngelMondragonResumeEN.pdf'
 
 export const Portfolio = () => {
     return (

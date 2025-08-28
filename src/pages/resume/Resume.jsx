@@ -31,8 +31,8 @@ import googleEngineer from '../../images/tech-images/devops/cloudEngineer.png';
 import pdfImage from '../../images/icons/pdf-icon.webp'
 
 
-import resume from '../../assets/resume.pdf'
-import resumeSpanish from '../../assets/resumeSpanish.pdf'
+import resume from '../../assets/AngelMondragonResumeEN.pdf'
+import resumeSpanish from '../../assets/AngelMondragonResumeSP.pdf'
 
 export const Resume = () => {
     return (
