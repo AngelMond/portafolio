@@ -1,6 +1,3 @@
-import React, { Component } from "react";
-import { Link } from "react-router-dom";
-
 //Frontend Images
 import api from '../../images/tech-images/front-end/api.png';
 import bootstrap from '../../images/tech-images/front-end/bootstrap.png';
